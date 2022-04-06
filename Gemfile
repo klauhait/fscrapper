@@ -26,6 +26,11 @@ gem 'jbuilder', '~> 2.7'
 # gem 'image_processing', '~> 1.2'
 gem 'open-uri'
 gem 'rest-client'
+gem 'capybara', '>= 3.26'
+gem 'selenium-webdriver', '>= 4.0.0.rc1'
+# Easy installation and use of web drivers to run system tests with browsers
+gem 'webdrivers'
+
 
 
 # Reduces boot times through caching; required in config/boot.rb
@@ -49,10 +54,6 @@ end
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '>= 3.26'
-  gem 'selenium-webdriver', '>= 4.0.0.rc1'
-  # Easy installation and use of web drivers to run system tests with browsers
-  gem 'webdrivers'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
